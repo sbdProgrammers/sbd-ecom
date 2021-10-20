@@ -1,0 +1,204 @@
+.products .card {
+    top: 0;
+    overflow: hidden;
+    /*margin-top: 50px;*/
+    border-radius: 7px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 3px 6px rgba(225, 177, 0, 0.16), 0 3px 6px rgba(225, 177, 0, 0.23);
+}
+
+.products .card:hover {
+    top: -7px;
+}
+
+.products .img-container img {
+    min-height: 330px;
+    max-height: 330px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.products .card .card-body p.extra {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.products .card .card-body,
+.products .card .img-container {
+    padding: 20px;
+}
+
+.products .card .img-container {
+    border-bottom: 4px solid #ffb100;
+}
+
+.products .category {
+    margin: 0;
+    height: 18px;
+    font-size: 15px;
+}
+
+.products .category span {
+    margin-left: 7px;
+    display: inline-block;
+}
+
+.products .card-title {
+    font-size: 22px;
+    margin: 5px 0 10px 0;
+    height: 55px;
+    font-weight: 500;
+    -webkit-line-clamp: 2 !important;
+}
+
+.products .price {
+    margin: 0;
+    font-size: 48px;
+    height: 50px;
+    align-self: center;
+    padding-top: 30px;
+}
+
+.products .media {
+    margin-top: -30px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.products .media-body {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.products .category,
+.products .card-title,
+.products .price {
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
+/* Star Rating With Progressbar */
+.rating-progressbar {
+    position: relative;
+}
+
+.rating-progressbar .rating-value {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.rating-progressbar .total-rating {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.rating {
+    width: 120px;
+    height: 24px;
+    position: relative;
+    background-color: gray;
+}
+
+.rating progress.rating-bg {
+    -webkit-appearance: none;
+    -moz-appearence: none;
+    appearance: none;
+    border: none;
+    display: inline-block;
+    height: 24px;
+    width: 100%;
+    color: orange;
+}
+
+.rating progress.rating-bg::-webkit-progress-value {
+    background-color: orange;
+}
+
+.rating progress.rating-bg::-moz-progress-bar {
+    background-color: orange;
+}
+
+.rating svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Modal */
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 9;
+}
+
+.modal-content {
+    border-radius: 4px;
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    background: #fff;
+}
+
+.modal-content .modal-header {
+    display: flex;
+    padding: 5px 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-content .modal-header h3 {
+    padding-right: 30px;
+    height: 22px;
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
+.modal .modal-body {
+    padding: 5px 20px;
+}
+
+.modal-close {
+    position: relative;
+    text-decoration: none;
+    font-size: 35px;
+    top: -2px;
+    color: #ca0b00;
+}
+
+.modal ul li {
+    letter-spacing: 1px;
+    font-size: 17px;
+    line-height: 30px;
+}

@@ -1,0 +1,53 @@
+.header {
+    font-size: 20px;
+    margin-top: 80px;
+    color: white;
+    background-color: #ffb100;
+}
+
+.header .app-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.header h3:nth-child(1) {
+    text-align: left;
+}
+
+.header .logo {
+    text-align: center;
+    position: relative;
+}
+
+.header .logo img {
+    height: 150px;
+    margin-bottom: -4px;
+    border-radius: 50%;
+    position: absolute;
+    top: -75px;
+    padding: 10px;
+    left: 50%;
+    transition: 0.4s all ease-in-out;
+    background-color: #ffffff;
+    transform: translateX(-50%);
+}
+
+/* Scroll Change Logo Position */
+.scrollNav .header .logo img {
+    height: 46px;
+    margin-top: 5px;
+    top: 0;
+}
+
+.header h3:nth-child(3) {
+    text-align: right;
+}
+
+.scrollNav .header {
+    top: -80px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
